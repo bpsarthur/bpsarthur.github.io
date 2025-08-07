@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur Berti | Cyber Threat Hunter</title>
+    <title data-i18n-key="title">Arthur Berti | Cyber Threat Hunter</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -202,7 +202,7 @@
     <!-- Seção 1: Cabeçalho e Introdução -->
     <header class="min-h-screen flex flex-col justify-center px-6 md:px-16 relative overflow-hidden">
         <div class="container mx-auto text-center z-10">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in" style="font-family: 'Roboto Mono', monospace;">ARTHUR BERTI PETERSEN SCHOLZE</h1>
+            <h1 data-i18n-key="name" class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in" style="font-family: 'Roboto Mono', monospace;">ARTHUR BERTI PETERSEN SCHOLZE</h1>
             
             <div class="flex justify-center mb-6">
                 <div class="h-1 w-24 bg-accent rounded-full"></div>
@@ -214,7 +214,7 @@
             
             <div class="flex items-center justify-center space-x-1 mb-12">
                 <i class="fas fa-map-marker-alt text-accent"></i>
-                <p class="text-sm md:text-base font-light">Joaçaba, Santa Catarina, Brasil</p>
+                <p data-i18n-key="location" class="text-sm md:text-base font-light">Joaçaba, Santa Catarina, Brasil</p>
             </div>
             
             <!-- Call-to-Action com ícones -->
@@ -230,6 +230,14 @@
                 </a>
             </div>
         </div>
+        <div class="absolute top-0 right-0 p-4">
+            <select id="language-switcher" class="bg-darkgray text-light border border-accent rounded-md p-2">
+                <option value="pt">Português</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="ru">Русский</option>
+            </select>
+        </div>
         
         <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
             <a href="#resumo" class="text-accent">
@@ -241,32 +249,32 @@
     <!-- Seção 2: Resumo (Sobre Mim) -->
     <section id="resumo" class="py-20 px-6 md:px-16 bg-darkgray">
         <div class="container mx-auto fade-in-section">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" style="font-family: 'Roboto Mono', monospace;">RESUMO</h2>
+            <h2 data-i18n-key="section_summary_title" class="text-3xl md:text-4xl font-bold mb-4 text-center" style="font-family: 'Roboto Mono', monospace;">RESUMO</h2>
             
             <div class="flex justify-center mb-12">
                 <div class="h-1 w-16 bg-accent rounded-full"></div>
             </div>
             
             <div class="max-w-4xl mx-auto space-y-4">
-                <p class="text-lg leading-relaxed">
+                <p data-i18n-key="summary_p1" class="text-lg leading-relaxed">
                     Profissional de cibersegurança com mais de <span class="text-accent">4 anos de experiência</span> e um histórico comprovado em diversos setores.
                 </p>
-                <p class="text-lg leading-relaxed">
+                <p data-i18n-key="summary_p2" class="text-lg leading-relaxed">
                     Atualmente, ocupo a posição de <span class="text-accent">Cyber Threat Hunter & Investigator</span> na IPV7 e atuo como <span class="text-accent">Jovem Aprendiz em Ti</span> na Universidade do Oeste de Santa Catarina.
                 </p>
-                <p class="text-lg leading-relaxed">
+                <p data-i18n-key="summary_p3" class="text-lg leading-relaxed">
                     Sou um entusiasta de <span class="text-accent">Linux, Bug Hunter</span> e estou classificado no <span class="text-accent">top 2% mundial</span> no TryHackMe (<span class="text-accent">#94 no Brasil</span>).
                 </p>
-                <p class="text-lg leading-relaxed">
+                <p data-i18n-key="summary_p4" class="text-lg leading-relaxed">
                     Possuo conhecimento prático e teórico em várias áreas da cibersegurança, incluindo: <span class="text-accent">Gestão de Riscos, Análise de Vulnerabilidades e Resposta a Incidentes</span>.
                 </p>
-                <p class="text-lg leading-relaxed">
+                <p data-i18n-key="summary_p5" class="text-lg leading-relaxed">
                     Minha trajetória inclui uma experiência confidencial em cibersegurança para uma empresa de tecnologia no Uruguai, onde fui responsável pela execução de tarefas críticas para a proteção de sistemas e dados sensíveis.
                 </p>
-                <p class="text-lg leading-relaxed">
+                <p data-i18n-key="summary_p6" class="text-lg leading-relaxed">
                     Sou fluente em <span class="text-accent">português e inglês</span>, com excelentes habilidades de comunicação oral e escrita. Sou um profissional autodidata, proativo, que aprende rápido e se adapta facilmente a novas situações, com capacidade de trabalhar de forma independente ou em equipe.
                 </p>
-                <p class="text-lg leading-relaxed">
+                <p data-i18n-key="summary_p7" class="text-lg leading-relaxed">
                     Estou constantemente buscando aprimoramento e pretendo me especializar ainda mais em áreas como <span class="text-accent">Ethical Hacking, Pentesting, Forense e DevSecOps</span>.
                 </p>
             </div>
@@ -276,55 +284,55 @@
     <!-- Seção 3: Principais Competências -->
     <section id="competencias" class="py-20 px-6 md:px-16 bg-dark">
         <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">PRINCIPAIS COMPETÊNCIAS</h2>
+            <h2 data-i18n-key="section_skills_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">PRINCIPAIS COMPETÊNCIAS</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="skill-card bg-darkgray rounded-xl p-8 transform transition-all duration-500 hover:shadow-xl fade-in-section delay-1">
                     <div class="text-5xl text-accent mb-4 flex justify-center">
                         <i class="fas fa-network-wired"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-center mb-2">Produtos Cisco Systems</h3>
-                    <p class="text-center opacity-75">Especialista em soluções de redes e segurança Cisco</p>
+                    <h3 data-i18n-key="skill1_title" class="text-xl font-bold text-center mb-2">Produtos Cisco Systems</h3>
+                    <p data-i18n-key="skill1_desc" class="text-center opacity-75">Especialista em soluções de redes e segurança Cisco</p>
                 </div>
                 
                 <div class="skill-card bg-darkgray rounded-xl p-8 transform transition-all duration-500 hover:shadow-xl fade-in-section delay-2">
                     <div class="text-5xl text-accent mb-4 flex justify-center">
                         <i class="fas fa-lock"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-center mb-2">VPN (Rede privada virtual)</h3>
-                    <p class="text-center opacity-75">Configuração e gestão de redes privadas virtuais</p>
+                    <h3 data-i18n-key="skill2_title" class="text-xl font-bold text-center mb-2">VPN (Rede privada virtual)</h3>
+                    <p data-i18n-key="skill2_desc" class="text-center opacity-75">Configuração e gestão de redes privadas virtuais</p>
                 </div>
                 
                 <div class="skill-card bg-darkgray rounded-xl p-8 transform transition-all duration-500 hover:shadow-xl fade-in-section delay-3">
                     <div class="text-5xl text-accent mb-4 flex justify-center">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-center mb-2">Ciência da computação</h3>
-                    <p class="text-center opacity-75">Base sólida em fundamentos computacionais</p>
+                    <h3 data-i18n-key="skill3_title" class="text-xl font-bold text-center mb-2">Ciência da computação</h3>
+                    <p data-i18n-key="skill3_desc" class="text-center opacity-75">Base sólida em fundamentos computacionais</p>
                 </div>
                 
                 <div class="skill-card bg-darkgray rounded-xl p-8 transform transition-all duration-500 hover:shadow-xl fade-in-section delay-4">
                     <div class="text-5xl text-accent mb-4 flex justify-center">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-center mb-2">Gestão de Riscos</h3>
-                    <p class="text-center opacity-75">Identificação e mitigação de riscos em TI</p>
+                    <h3 data-i18n-key="skill4_title" class="text-xl font-bold text-center mb-2">Gestão de Riscos</h3>
+                    <p data-i18n-key="skill4_desc" class="text-center opacity-75">Identificação e mitigação de riscos em TI</p>
                 </div>
                 
                 <div class="skill-card bg-darkgray rounded-xl p-8 transform transition-all duration-500 hover:shadow-xl fade-in-section delay-5">
                     <div class="text-5xl text-accent mb-4 flex justify-center">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-center mb-2">Análise de Vulnerabilidades</h3>
-                    <p class="text-center opacity-75">Detecção e correção de vulnerabilidades em sistemas</p>
+                    <h3 data-i18n-key="skill5_title" class="text-xl font-bold text-center mb-2">Análise de Vulnerabilidades</h3>
+                    <p data-i18n-key="skill5_desc" class="text-center opacity-75">Detecção e correção de vulnerabilidades em sistemas</p>
                 </div>
                 
                 <div class="skill-card bg-darkgray rounded-xl p-8 transform transition-all duration-500 hover:shadow-xl fade-in-section delay-1">
                     <div class="text-5xl text-accent mb-4 flex justify-center">
                         <i class="fas fa-bolt"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-center mb-2">Resposta a Incidentes</h3>
-                    <p class="text-center opacity-75">Atuação rápida e eficiente em incidentes de segurança</p>
+                    <h3 data-i18n-key="skill6_title" class="text-xl font-bold text-center mb-2">Resposta a Incidentes</h3>
+                    <p data-i18n-key="skill6_desc" class="text-center opacity-75">Atuação rápida e eficiente em incidentes de segurança</p>
                 </div>
             </div>
         </div>
@@ -333,7 +341,7 @@
     <!-- Seção 4: Experiência Profissional -->
     <section id="experiencia" class="py-20 px-6 md:px-16 bg-darkgray relative">
         <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">EXPERIÊNCIA</h2>
+            <h2 data-i18n-key="section_experience_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">EXPERIÊNCIA</h2>
             
             <div class="relative timeline py-8">
                 <!-- Timeline vertical -->
@@ -342,11 +350,11 @@
                     <div class="absolute timeline-dot"></div>
                     <div class="bg-dark p-8 rounded-xl shadow-lg ml-0 md:ml-0 w-full md:w-5/12">
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-xl font-bold text-accent">IPV7</h3>
-                            <span class="text-sm bg-accent text-dark px-3 py-1 rounded-full">Atual</span>
+                            <h3 data-i18n-key="exp1_company" class="text-xl font-bold text-accent">IPV7</h3>
+                            <span data-i18n-key="exp1_status" class="text-sm bg-accent text-dark px-3 py-1 rounded-full">Atual</span>
                         </div>
-                        <h4 class="text-lg font-bold mb-2">Cyber Threat Hunter & Investigator</h4>
-                        <p class="text-sm opacity-75 mb-4">maio de 2025 - Presente (3 meses)</p>
+                        <h4 data-i18n-key="exp1_role" class="text-lg font-bold mb-2">Cyber Threat Hunter & Investigator</h4>
+                        <p data-i18n-key="exp1_date" class="text-sm opacity-75 mb-4">maio de 2025 - Presente (3 meses)</p>
                     </div>
                 </div>
                 
@@ -355,11 +363,11 @@
                     <div class="absolute timeline-dot"></div>
                     <div class="bg-dark p-8 rounded-xl shadow-lg w-full md:w-5/12">
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-xl font-bold text-accent">Unoesc</h3>
-                            <span class="text-sm bg-accent text-dark px-3 py-1 rounded-full">Atual</span>
+                            <h3 data-i18n-key="exp2_company" class="text-xl font-bold text-accent">Unoesc</h3>
+                            <span data-i18n-key="exp2_status" class="text-sm bg-accent text-dark px-3 py-1 rounded-full">Atual</span>
                         </div>
-                        <h4 class="text-lg font-bold mb-2">Jovem aprendiz em TI</h4>
-                        <p class="text-sm opacity-75 mb-4">maio de 2025 - Presente (3 meses)</p>
+                        <h4 data-i18n-key="exp2_role" class="text-lg font-bold mb-2">Jovem aprendiz em TI</h4>
+                        <p data-i18n-key="exp2_date" class="text-sm opacity-75 mb-4">maio de 2025 - Presente (3 meses)</p>
                     </div>
                 </div>
                 
@@ -367,10 +375,10 @@
                 <div class="relative mb-12 timeline-item timeline-item-left ml-0 md:ml-0 fade-in-section delay-3">
                     <div class="absolute timeline-dot"></div>
                     <div class="bg-dark p-8 rounded-xl shadow-lg ml-0 md:ml-0 w-full md:w-5/12">
-                        <h3 class="text-xl font-bold text-accent mb-4">Freelance (Confidencial)</h3>
-                        <h4 class="text-lg font-bold mb-2">Cibersegurança</h4>
-                        <p class="text-sm opacity-75 mb-4">abril de 2023 - fevereiro de 2025 (1 ano 11 meses) | Uruguai</p>
-                        <p class="text-opacity-90">Atuando em cibersegurança para uma empresa de tecnologia no Uruguai, operei sob estrito sigilo profissional (NDA). Desde o início, me foi confiada a execução de tarefas críticas para a proteção de sistemas e dados sensíveis, demonstrando um elevado grau de responsabilidade no cargo.</p>
+                        <h3 data-i18n-key="exp3_company" class="text-xl font-bold text-accent mb-4">Freelance (Confidencial)</h3>
+                        <h4 data-i18n-key="exp3_role" class="text-lg font-bold mb-2">Cibersegurança</h4>
+                        <p data-i18n-key="exp3_date" class="text-sm opacity-75 mb-4">abril de 2023 - fevereiro de 2025 (1 ano 11 meses) | Uruguai</p>
+                        <p data-i18n-key="exp3_desc" class="text-opacity-90">Atuando em cibersegurança para uma empresa de tecnologia no Uruguai, operei sob estrito sigilo profissional (NDA). Desde o início, me foi confiada a execução de tarefas críticas para a proteção de sistemas e dados sensíveis, demonstrando um elevado grau de responsabilidade no cargo.</p>
                     </div>
                 </div>
                 
@@ -378,9 +386,9 @@
                 <div class="relative mb-12 timeline-item timeline-item-right ml-auto fade-in-section delay-4">
                     <div class="absolute timeline-dot"></div>
                     <div class="bg-dark p-8 rounded-xl shadow-lg w-full md:w-5/12">
-                        <h3 class="text-xl font-bold text-accent mb-4">immich bier haus</h3>
-                        <h4 class="text-lg font-bold mb-2">Garçom e barmen</h4>
-                        <p class="text-sm opacity-75 mb-4">janeiro de 2023 - dezembro de 2023 (1 ano)</p>
+                        <h3 data-i18n-key="exp4_company" class="text-xl font-bold text-accent mb-4">immich bier haus</h3>
+                        <h4 data-i18n-key="exp4_role" class="text-lg font-bold mb-2">Garçom e barmen</h4>
+                        <p data-i18n-key="exp4_date" class="text-sm opacity-75 mb-4">janeiro de 2023 - dezembro de 2023 (1 ano)</p>
                     </div>
                 </div>
                 
@@ -388,10 +396,10 @@
                 <div class="relative mb-12 timeline-item timeline-item-left ml-0 md:ml-0 fade-in-section delay-5">
                     <div class="absolute timeline-dot"></div>
                     <div class="bg-dark p-8 rounded-xl shadow-lg ml-0 md:ml-0 w-full md:w-5/12">
-                        <h3 class="text-xl font-bold text-accent mb-4">Chaloe Cosmeticos</h3>
-                        <h4 class="text-lg font-bold mb-2">Desenvolvedor web freelancer</h4>
-                        <p class="text-sm opacity-75 mb-4">julho de 2023 - agosto de 2023 (2 meses)</p>
-                        <p class="text-opacity-90">Desenvolvi um site em HTML (somente a parte frontend, pois o backend já estava pronto)</p>
+                        <h3 data-i18n-key="exp5_company" class="text-xl font-bold text-accent mb-4">Chaloe Cosmeticos</h3>
+                        <h4 data-i18n-key="exp5_role" class="text-lg font-bold mb-2">Desenvolvedor web freelancer</h4>
+                        <p data-i18n-key="exp5_date" class="text-sm opacity-75 mb-4">julho de 2023 - agosto de 2023 (2 meses)</p>
+                        <p data-i18n-key="exp5_desc" class="text-opacity-90">Desenvolvi um site em HTML (somente a parte frontend, pois o backend já estava pronto)</p>
                     </div>
                 </div>
                 
@@ -399,10 +407,10 @@
                 <div class="relative mb-12 timeline-item timeline-item-right ml-auto fade-in-section delay-1">
                     <div class="absolute timeline-dot"></div>
                     <div class="bg-dark p-8 rounded-xl shadow-lg w-full md:w-5/12">
-                        <h3 class="text-xl font-bold text-accent mb-4">Restaurante Atafona</h3>
-                        <h4 class="text-lg font-bold mb-2">Garçom</h4>
-                        <p class="text-sm opacity-75 mb-4">janeiro de 2019 - maio de 2021 (2 anos 5 meses)</p>
-                        <p class="text-opacity-90">O meu começo no mercado de trabalho começou aqui, atuei como garçom, auxiliar de cozinha, barmen e gerente de caixa. Resumindo, era um 'faz tudo'</p>
+                        <h3 data-i18n-key="exp6_company" class="text-xl font-bold text-accent mb-4">Restaurante Atafona</h3>
+                        <h4 data-i18n-key="exp6_role" class="text-lg font-bold mb-2">Garçom</h4>
+                        <p data-i18n-key="exp6_date" class="text-sm opacity-75 mb-4">janeiro de 2019 - maio de 2021 (2 anos 5 meses)</p>
+                        <p data-i18n-key="exp6_desc" class="text-opacity-90">O meu começo no mercado de trabalho começou aqui, atuei como garçom, auxiliar de cozinha, barmen e gerente de caixa. Resumindo, era um 'faz tudo'</p>
                     </div>
                 </div>
             </div>
@@ -412,19 +420,19 @@
     <!-- Seção 5: Certificações e Formação Acadêmica -->
     <section id="certificacoes" class="py-20 px-6 md:px-16 bg-dark">
         <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">CERTIFICAÇÕES E FORMAÇÃO ACADÊMICA</h2>
+            <h2 data-i18n-key="section_certs_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">CERTIFICAÇÕES E FORMAÇÃO ACADÊMICA</h2>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Certificações -->
                 <div class="fade-in-section">
-                    <h3 class="text-2xl font-bold mb-8 text-accent text-center">CERTIFICAÇÕES</h3>
+                    <h3 data-i18n-key="certs_title" class="text-2xl font-bold mb-8 text-accent text-center">CERTIFICAÇÕES</h3>
                     
                     <div class="space-y-6">
                         <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-1">
                             <div class="flex items-start">
                                 <i class="fab fa-critical-role text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">CompTIA Pentest+ Certificate</h4>
+                                    <h4 data-i18n-key="cert1" class="text-xl font-bold">CompTIA Pentest+ Certificate</h4>
                                 </div>
                             </div>
                         </div>
@@ -433,7 +441,7 @@
                             <div class="flex items-start">
                                 <i class="fas fa-terminal text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">Jr Penetration Tester Certificate</h4>
+                                    <h4 data-i18n-key="cert2" class="text-xl font-bold">Jr Penetration Tester Certificate</h4>
                                 </div>
                             </div>
                         </div>
@@ -442,7 +450,7 @@
                             <div class="flex items-start">
                                 <i class="fas fa-globe text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">Web Fundamentals Certificate</h4>
+                                    <h4 data-i18n-key="cert3" class="text-xl font-bold">Web Fundamentals Certificate</h4>
                                 </div>
                             </div>
                         </div>
@@ -451,7 +459,7 @@
                             <div class="flex items-start">
                                 <i class="fas fa-shield-alt text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">Cyber Security 101 Certificate</h4>
+                                    <h4 data-i18n-key="cert4" class="text-xl font-bold">Cyber Security 101 Certificate</h4>
                                 </div>
                             </div>
                         </div>
@@ -460,7 +468,7 @@
                             <div class="flex items-start">
                                 <i class="fas fa-lock text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">Pre Security Certificate</h4>
+                                    <h4 data-i18n-key="cert5" class="text-xl font-bold">Pre Security Certificate</h4>
                                 </div>
                             </div>
                         </div>
@@ -469,15 +477,15 @@
                 
                 <!-- Formação Acadêmica -->
                 <div class="fade-in-section">
-                    <h3 class="text-2xl font-bold mb-8 text-accent text-center">FORMAÇÃO ACADÊMICA</h3>
+                    <h3 data-i18n-key="education_title" class="text-2xl font-bold mb-8 text-accent text-center">FORMAÇÃO ACADÊMICA</h3>
                     
                     <div class="space-y-6">
                         <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-1">
                             <div class="flex items-start">
                                 <i class="fas fa-user-secret text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">Ethical Hacker Full Course</h4>
-                                    <p class="opacity-75">Cisco Networking Academy | março de 2025 - dezembro de 2025</p>
+                                    <h4 data-i18n-key="edu1_title" class="text-xl font-bold">Ethical Hacker Full Course</h4>
+                                    <p data-i18n-key="edu1_desc" class="opacity-75">Cisco Networking Academy | março de 2025 - dezembro de 2025</p>
                                 </div>
                             </div>
                         </div>
@@ -486,8 +494,8 @@
                             <div class="flex items-start">
                                 <i class="fas fa-graduation-cap text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">Segurança da Informação</h4>
-                                    <p class="opacity-75">Senai São Paulo | janeiro de 2024 - dezembro de 2025</p>
+                                    <h4 data-i18n-key="edu2_title" class="text-xl font-bold">Segurança da Informação</h4>
+                                    <p data-i18n-key="edu2_desc" class="opacity-75">Senai São Paulo | janeiro de 2024 - dezembro de 2025</p>
                                 </div>
                             </div>
                         </div>
@@ -496,8 +504,8 @@
                             <div class="flex items-start">
                                 <i class="fab fa-python text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">Curso de Python 3</h4>
-                                    <p class="opacity-75">Udemy Alumni | março de 2024 - junho de 2025</p>
+                                    <h4 data-i18n-key="edu3_title" class="text-xl font-bold">Curso de Python 3</h4>
+                                    <p data-i18n-key="edu3_desc" class="opacity-75">Udemy Alumni | março de 2024 - junho de 2025</p>.
                                 </div>
                             </div>
                         </div>
@@ -506,8 +514,8 @@
                             <div class="flex items-start">
                                 <i class="fas fa-briefcase text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">Curso Técnico em Administração</h4>
-                                    <p class="opacity-75">Ε.Ε.B Padre Nobrega | fevereiro de 2024 - dezembro de 2024</p>
+                                    <h4 data-i18n-key="edu4_title" class="text-xl font-bold">Curso Técnico em Administração</h4>
+                                    <p data-i18n-key="edu4_desc" class="opacity-75">Ε.Ε.B Padre Nobrega | fevereiro de 2024 - dezembro de 2024</p>
                                 </div>
                             </div>
                         </div>
@@ -516,8 +524,8 @@
                             <div class="flex items-start">
                                 <i class="fas fa-school text-accent text-2xl mr-4 mt-1"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold">Ensino Médio</h4>
-                                    <p class="opacity-75">Padre Nobrega | janeiro de 2022 - dezembro de 2025</p>
+                                    <h4 data-i18n-key="edu5_title" class="text-xl font-bold">Ensino Médio</h4>
+                                    <p data-i18n-key="edu5_desc" class="opacity-75">Padre Nobrega | janeiro de 2022 - dezembro de 2025</p>
                                 </div>
                             </div>
                         </div>
@@ -530,7 +538,7 @@
     <!-- Seção 6: Contato -->
     <section id="contato" class="py-20 px-6 md:px-16 bg-darkgray">
         <div class="container mx-auto max-w-3xl">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">VAMOS NOS CONECTAR!</h2>
+            <h2 data-i18n-key="section_contact_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">VAMOS NOS CONECTAR!</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 fade-in-section">
                 <div class="bg-dark p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
@@ -539,7 +547,7 @@
                             <i class="fas fa-envelope text-accent text-lg"></i>
                         </div>
                         <div>
-                            <h3 class="text-xs font-bold opacity-80 mb-1">Email</h3>
+                            <h3 data-i18n-key="contact_email_label" class="text-xs font-bold opacity-80 mb-1">Email</h3>
                             <p class="text-base hover:text-accent transition-colors">
                                 <a href="mailto:arthur.b.p.s@outlook.com.br">arthur.b.p.s@outlook.com.br</a>
                             </p>
@@ -551,7 +559,7 @@
                             <i class="fas fa-mobile-alt text-accent text-lg"></i>
                         </div>
                         <div>
-                            <h3 class="text-xs font-bold opacity-80 mb-1">Celular</h3>
+                            <h3 data-i18n-key="contact_phone_label" class="text-xs font-bold opacity-80 mb-1">Celular</h3>
                             <p class="text-base hover:text-accent transition-colors">
                                 <a href="tel:+5549991254441">+55 (49) 99125-4441</a>
                             </p>
@@ -574,7 +582,7 @@
                         </div>
                         
                         <div class="text-center mt-6">
-                            <p class="italic opacity-75">"Segurança não é um produto, mas um processo."</p>
+                            <p data-i18n-key="contact_quote" class="italic opacity-75">"Segurança não é um produto, mas um processo."</p>
                         </div>
                     </div>
                 </div>
@@ -585,40 +593,13 @@
     <!-- Rodapé -->
     <footer class="py-10 bg-dark text-center">
         <div class="container mx-auto">
-            <p>&copy; 2025 Arthur Berti Petersen Scholze. Todos os direitos reservados.</p>
+            <p data-i18n-key="footer_text">&copy; 2025 Arthur Berti Petersen Scholze. Todos os direitos reservados.</p>
         </div>
     </footer>
     
     <script>
         // Animação de digitação para o título principal
         document.addEventListener('DOMContentLoaded', function() {
-            const text = "Cyber Threat Hunter & Investigator | CompTIA Pentest+ | SOC/ NOC pleno | Linux Enthusiast | Bug Hunter";
-            const elem = document.getElementById("typewriter");
-            
-            let i = 0;
-            let charIndex = 0;
-            const words = text.split("|");
-            
-            function typeWriter() {
-                if (i < words.length) {
-                    if (charIndex < words[i].length) {
-                        elem.innerHTML += words[i].charAt(charIndex);
-                        charIndex++;
-                        setTimeout(typeWriter, 50);
-                    } else {
-                        i++;
-                        charIndex = 0;
-                        if (i < words.length) {
-                            elem.innerHTML += " | ";
-                            setTimeout(typeWriter, 300);
-                        }
-                    }
-                }
-            }
-            
-            // Delay para começar a animação
-            setTimeout(typeWriter, 1000);
-            
             // Intersection Observer para animações de scroll
             const observerOptions = {
                 threshold: 0.3
@@ -720,4 +701,5 @@
             animate();
         });
     </script>
+    <script src="js/translator.js"></script>
 </html>
