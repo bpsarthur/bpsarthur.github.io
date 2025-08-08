@@ -403,6 +403,36 @@
     <section id="cves" class="py-20 px-6 md:px-16 bg-dark">
         <div class="container mx-auto fade-in-section">
             <h2 data-i18n-key="section_cves_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">CVEs RECENTES</h2>
+
+            <!-- CVE Filters -->
+            <div id="cve-filters" class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 items-end">
+                <div>
+                    <label for="cve-severity" class="block text-sm font-medium text-light" data-i18n-key="filter_severity">Severidade</label>
+                    <select id="cve-severity" class="mt-1 block w-full bg-darkgray border-accent rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-accent focus:border-accent">
+                        <option value="" data-i18n-key="filter_severity_all">Todas</option>
+                        <option value="CRITICAL" data-i18n-key="filter_severity_critical">Crítico</option>
+                        <option value="HIGH" data-i18n-key="filter_severity_high">Alto</option>
+                        <option value="MEDIUM" data-i18n-key="filter_severity_medium">Médio</option>
+                        <option value="LOW" data-i18n-key="filter_severity_low">Baixo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cve-keyword" class="block text-sm font-medium text-light" data-i18n-key="filter_keyword">Palavra-chave</label>
+                    <input type="text" id="cve-keyword" class="mt-1 block w-full bg-darkgray border-accent rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-accent focus:border-accent" placeholder="Ex: Apache, Windows...">
+                </div>
+                <div>
+                    <label for="cve-period" class="block text-sm font-medium text-light" data-i18n-key="filter_period">Período</label>
+                    <select id="cve-period" class="mt-1 block w-full bg-darkgray border-accent rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-accent focus:border-accent">
+                        <option value="7" data-i18n-key="filter_period_7">Últimos 7 dias</option>
+                        <option value="30" data-i18n-key="filter_period_30">Últimos 30 dias</option>
+                        <option value="90" data-i18n-key="filter_period_90">Últimos 90 dias</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="cve-filter-btn" class="w-full bg-accent text-dark font-bold py-2 px-4 rounded-md hover:bg-accent-dark transition-colors duration-300" data-i18n-key="filter_button">Filtrar</button>
+                </div>
+            </div>
+
             <div id="cve-container" class="space-y-8">
                 <!-- CVEs will be loaded here by JavaScript -->
                 <p data-i18n-key="cves_loading" class="text-center text-accent">Carregando vulnerabilidades mais recentes...</p>
