@@ -14,10 +14,11 @@
             theme: {
                 extend: {
                     colors: {
-                        dark: '#0a0a12',
-                        darkgray: '#151522',
-                        accent: '#00e4b8',
-                        light: '#e8f6f3',
+                        dark: '#0d1117',
+                        darkgray: '#161b22',
+                        accent: '#00ff41',
+                        'accent-secondary': '#58a6ff',
+                        light: '#c9d1d9',
                     },
                     fontFamily: {
                         montserrat: ['Montserrat', 'sans-serif'],
@@ -234,9 +235,9 @@
         <div class="container mx-auto text-center z-10">
             <h1 data-i18n-key="name" class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in" style="font-family: 'Roboto Mono', monospace;">ARTHUR BERTI PETERSEN SCHOLZE</h1>
             
-            <div class="flex justify-center mb-6">
-                <div class="h-1 w-24 bg-accent rounded-full"></div>
-            </div>
+            <h2 class="text-xl md:text-2xl font-semibold text-light mb-6 animate-fade-in" data-i18n-key="subtitle">
+                TryHackMe Top 2% Mundial #94 BR | CompTIA PenTest+ & Security+ Certified
+            </h2>
             
             <div class="flex justify-center mb-8">
                 <p id="typewriter" class="text-lg md:text-xl lg:text-2xl font-light text-accent" style="font-family: 'Roboto Mono', monospace;"></p>
@@ -310,94 +311,120 @@
             </div>
         </div>
     </section>
+
+    <!-- Seção 6: Projetos em Destaque -->
+    <section id="projetos" class="py-20 px-6 md:px-16 bg-dark">
+        <div class="container mx-auto">
+            <h2 data-i18n-key="section_projects_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">PROJETOS EM DESTAQUE</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projeto 1 -->
+                <div class="bg-darkgray p-6 rounded-lg transform transition-all hover:-translate-y-1 fade-in-section delay-1">
+                    <h3 data-i18n-key="project1_title" class="text-xl font-bold text-accent">kali-server-main (v1.2.0+)</h3>
+                    <p data-i18n-key="project1_desc" class="mt-2">FastAPI-based security server with async support and comprehensive testing suite.</p>
+                    <p class="mt-4"><strong data-i18n-key="tech_stack_label">Tech Stack:</strong> Python, FastAPI, Docker, pytest</p>
+                    <p><strong data-i18n-key="status_label">Status:</strong> Em Desenvolvimento Ativo</p>
+                    <a href="https://github.com/bpsarthur/kali-server-main" target="_blank" class="text-accent hover:underline mt-4 inline-block">View on GitHub &rarr;</a>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="bg-darkgray p-6 rounded-lg transform transition-all hover:-translate-y-1 fade-in-section delay-2">
+                    <h3 data-i18n-key="project2_title" class="text-xl font-bold text-accent">Death's Hand Repository</h3>
+                    <p data-i18n-key="project2_desc" class="mt-2">Security research and offensive tooling project.</p>
+                    <p class="mt-4"><strong data-i18n-key="tech_stack_label">Tech Stack:</strong> Python, Security Tools</p>
+                    <p><strong data-i18n-key="status_label">Status:</strong> Em Desenvolvimento</p>
+                    <a href="https://github.com/bpsarthur/deaths-hand" target="_blank" class="text-accent hover:underline mt-4 inline-block">View on GitHub &rarr;</a>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="bg-darkgray p-6 rounded-lg transform transition-all hover:-translate-y-1 fade-in-section delay-3">
+                    <h3 data-i18n-key="project3_title" class="text-xl font-bold text-accent">MCP Security Servers</h3>
+                    <p data-i18n-key="project3_desc" class="mt-2">Model Context Protocol implementation for security workflows.</p>
+                    <p class="mt-4"><strong data-i18n-key="tech_stack_label">Tech Stack:</strong> Python, MCP, Security APIs</p>
+                    <p><strong data-i18n-key="status_label">Status:</strong> Beta</p>
+                    <a href="#" class="text-accent hover:underline mt-4 inline-block">Link (quando disponível) &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- Seção 3: Principais Competências -->
     <section id="competencias" class="py-20 px-6 md:px-16 bg-dark">
         <div class="container mx-auto">
             <h2 data-i18n-key="section_skills_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">PRINCIPAIS COMPETÊNCIAS</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Skill 1 -->
-                <div class="skill-card-container fade-in-section delay-1">
-                    <div class="skill-card">
-                        <div class="card-front bg-darkgray p-8">
-                            <div class="text-5xl text-accent mb-4"><i class="fas fa-network-wired"></i></div>
-                            <h3 data-i18n-key="skill1_title" class="text-xl font-bold text-center mb-2">Produtos Cisco Systems</h3>
-                            <p data-i18n-key="skill1_desc" class="text-center opacity-75">Especialista em soluções de redes e segurança Cisco</p>
-                        </div>
-                        <div class="card-back bg-darkgray">
-                            <p data-i18n-key="skill1_back" class="text-center italic">"A espinha dorsal da internet, protegida com a robustez da Cisco."</p>
-                        </div>
+             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1: Cybersecurity & Pentesting -->
+            <div class="skill-card-container fade-in-section delay-1">
+                <div class="skill-card">
+                    <div class="card-front bg-darkgray p-8">
+                        <div class="text-5xl text-accent mb-4"><i class="fas fa-shield-alt"></i></div>
+                        <h3 data-i18n-key="skill_cat1_title" class="text-xl font-bold text-center mb-2">🔒 Cybersecurity & Pentesting</h3>
+                    </div>
+                    <div class="card-back bg-darkgray">
+                        <ul class="text-left w-full space-y-2">
+                            <li data-i18n-key="skill_cat1_1">Offensive Security <span class="text-accent float-right">Advanced</span></li>
+                            <li data-i18n-key="skill_cat1_2">SOC <span class="text-accent float-right">Advanced</span></li>
+                            <li data-i18n-key="skill_cat1_3">Vulnerability Assessment <span class="text-accent float-right">Intermediate</span></li>
+                            <li data-i18n-key="skill_cat1_4">Network Security <span class="text-accent float-right">Intermediate</span></li>
+                            <li data-i18n-key="skill_cat1_5">OSINT <span class="text-accent float-right">Advanced</span></li>
+                            <li data-i18n-key="skill_cat1_6">Kali Linux <span class="text-accent float-right">Expert</span></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Skill 2 -->
-                <div class="skill-card-container fade-in-section delay-2">
-                    <div class="skill-card">
-                        <div class="card-front bg-darkgray p-8">
-                            <div class="text-5xl text-accent mb-4"><i class="fas fa-lock"></i></div>
-                            <h3 data-i18n-key="skill2_title" class="text-xl font-bold text-center mb-2">VPN (Rede privada virtual)</h3>
-                            <p data-i18n-key="skill2_desc" class="text-center opacity-75">Configuração e gestão de redes privadas virtuais</p>
-                        </div>
-                        <div class="card-back bg-darkgray">
-                            <p data-i18n-key="skill2_back" class="text-center italic">"Criando túneis seguros em um mundo de dados abertos."</p>
-                        </div>
+            </div>
+            <!-- Card 2: Backend Development -->
+            <div class="skill-card-container fade-in-section delay-2">
+                <div class="skill-card">
+                    <div class="card-front bg-darkgray p-8">
+                        <div class="text-5xl text-accent mb-4"><i class="fas fa-code"></i></div>
+                        <h3 data-i18n-key="skill_cat2_title" class="text-xl font-bold text-center mb-2">💻 Backend Development</h3>
+                    </div>
+                    <div class="card-back bg-darkgray">
+                        <ul class="text-left w-full space-y-2">
+                            <li data-i18n-key="skill_cat2_1">Python (FastAPI) <span class="text-accent float-right">Advanced</span></li>
+                            <li data-i18n-key="skill_cat2_2">Go <span class="text-accent float-right">Beginner</span></li>
+                            <li data-i18n-key="skill_cat2_3">JavaScript/TypeScript <span class="text-accent float-right">Intermediate</span></li>
+                            <li data-i18n-key="skill_cat2_4">API Development <span class="text-accent float-right">Advanced</span></li>
+                            <li data-i18n-key="skill_cat2_5">Docker <span class="text-accent float-right">Intermediate</span></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Skill 3 -->
-                <div class="skill-card-container fade-in-section delay-3">
-                    <div class="skill-card">
-                        <div class="card-front bg-darkgray p-8">
-                            <div class="text-5xl text-accent mb-4"><i class="fas fa-laptop-code"></i></div>
-                            <h3 data-i18n-key="skill3_title" class="text-xl font-bold text-center mb-2">Ciência da computação</h3>
-                            <p data-i18n-key="skill3_desc" class="text-center opacity-75">Base sólida em fundamentos computacionais</p>
-                        </div>
-                        <div class="card-back bg-darkgray">
-                            <p data-i18n-key="skill3_back" class="text-center italic">"Entender o 'como' é o primeiro passo para proteger o 'quê'."</p>
-                        </div>
+            </div>
+            <!-- Card 3: Linux & Infrastructure -->
+            <div class="skill-card-container fade-in-section delay-3">
+                <div class="skill-card">
+                    <div class="card-front bg-darkgray p-8">
+                        <div class="text-5xl text-accent mb-4"><i class="fab fa-linux"></i></div>
+                        <h3 data-i18n-key="skill_cat3_title" class="text-xl font-bold text-center mb-2">🐧 Linux & Infrastructure</h3>
+                    </div>
+                    <div class="card-back bg-darkgray">
+                        <ul class="text-left w-full space-y-2">
+                            <li data-i18n-key="skill_cat3_1">Linux System Admin <span class="text-accent float-right">Advanced</span></li>
+                            <li data-i18n-key="skill_cat3_2">Docker & Containers <span class="text-accent float-right">Intermediate</span></li>
+                            <li data-i18n-key="skill_cat3_3">Google Cloud API <span class="text-accent float-right">Beginner</span></li>
+                            <li data-i18n-key="skill_cat3_4">CI/CD Pipelines <span class="text-accent float-right">Intermediate</span></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Skill 4 -->
-                <div class="skill-card-container fade-in-section delay-4">
-                    <div class="skill-card">
-                        <div class="card-front bg-darkgray p-8">
-                            <div class="text-5xl text-accent mb-4"><i class="fas fa-chart-line"></i></div>
-                            <h3 data-i18n-key="skill4_title" class="text-xl font-bold text-center mb-2">Gestão de Riscos</h3>
-                            <p data-i18n-key="skill4_desc" class="text-center opacity-75">Identificação e mitigação de riscos em TI</p>
-                        </div>
-                        <div class="card-back bg-darkgray">
-                             <p data-i18n-key="skill4_back" class="text-center italic">"Não se trata de evitar o risco, mas de entendê-lo e gerenciá-lo."</p>
-                        </div>
+            </div>
+            <!-- Card 4: Testing & QA -->
+            <div class="skill-card-container fade-in-section delay-4">
+                <div class="skill-card">
+                    <div class="card-front bg-darkgray p-8">
+                        <div class="text-5xl text-accent mb-4"><i class="fas fa-flask"></i></div>
+                        <h3 data-i18n-key="skill_cat4_title" class="text-xl font-bold text-center mb-2">🧪 Testing & QA</h3>
                     </div>
-                </div>
-                <!-- Skill 5 -->
-                <div class="skill-card-container fade-in-section delay-5">
-                    <div class="skill-card">
-                        <div class="card-front bg-darkgray p-8">
-                            <div class="text-5xl text-accent mb-4"><i class="fas fa-shield-alt"></i></div>
-                            <h3 data-i18n-key="skill5_title" class="text-xl font-bold text-center mb-2">Análise de Vulnerabilidades</h3>
-                            <p data-i18n-key="skill5_desc" class="text-center opacity-75">Detecção e correção de vulnerabilidades em sistemas</p>
-                        </div>
-                        <div class="card-back bg-darkgray">
-                            <p data-i18n-key="skill5_back" class="text-center italic">"Encontrar a falha antes que o adversário a explore."</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skill 6 -->
-                <div class="skill-card-container fade-in-section delay-1">
-                    <div class="skill-card">
-                        <div class="card-front bg-darkgray p-8">
-                            <div class="text-5xl text-accent mb-4"><i class="fas fa-bolt"></i></div>
-                            <h3 data-i18n-key="skill6_title" class="text-xl font-bold text-center mb-2">Resposta a Incidentes</h3>
-                            <p data-i18n-key="skill6_desc" class="text-center opacity-75">Atuação rápida e eficiente em incidentes de segurança</p>
-                        </div>
-                        <div class="card-back bg-darkgray">
-                            <p data-i18n-key="skill6_back" class="text-center italic">"Quando o alarme soa, a calma e a precisão são nossas melhores ferramentas."</p>
-                        </div>
+                    <div class="card-back bg-darkgray">
+                        <ul class="text-left w-full space-y-2">
+                            <li data-i18n-key="skill_cat4_1">pytest <span class="text-accent float-right">Advanced</span></li>
+                            <li data-i18n-key="skill_cat4_2">Integration Testing <span class="text-accent float-right">Intermediate</span></li>
+                            <li data-i18n-key="skill_cat4_3">Security Testing <span class="text-accent float-right">Advanced</span></li>
+                            <li data-i18n-key="skill_cat4_4">Code Review <span class="text-accent float-right">Advanced</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Seção 3.5: CVEs Recentes -->
     <section id="cves" class="py-20 px-6 md:px-16 bg-dark">
@@ -519,119 +546,47 @@
         </div>
     </section>
     
-    <!-- Seção 5: Certificações e Formação Acadêmica -->
+    <!-- Seção 5: Certificações e Conquistas -->
     <section id="certificacoes" class="py-20 px-6 md:px-16 bg-dark">
         <div class="container mx-auto">
-            <h2 data-i18n-key="section_certs_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">CERTIFICAÇÕES E FORMAÇÃO ACADÊMICA</h2>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Certificações -->
-                <div class="fade-in-section">
-                    <h3 data-i18n-key="certs_title" class="text-2xl font-bold mb-8 text-accent text-center">CERTIFICAÇÕES</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-1">
-                            <div class="flex items-start">
-                                <i class="fab fa-critical-role text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="cert1" class="text-xl font-bold">CompTIA Pentest+ Certificate</h4>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-2">
-                            <div class="flex items-start">
-                                <i class="fas fa-terminal text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="cert2" class="text-xl font-bold">Jr Penetration Tester Certificate</h4>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-3">
-                            <div class="flex items-start">
-                                <i class="fas fa-globe text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="cert3" class="text-xl font-bold">Web Fundamentals Certificate</h4>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-4">
-                            <div class="flex items-start">
-                                <i class="fas fa-shield-alt text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="cert4" class="text-xl font-bold">Cyber Security 101 Certificate</h4>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-5">
-                            <div class="flex items-start">
-                                <i class="fas fa-lock text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="cert5" class="text-xl font-bold">Pre Security Certificate</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <h2 data-i18n-key="section_certs_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">CERTIFICAÇÕES E CONQUISTAS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CompTIA PenTest+ -->
+                <div class="bg-darkgray p-6 rounded-lg text-center transform transition-all hover:-translate-y-1 fade-in-section delay-1">
+                    <h3 data-i18n-key="cert_pentest_title" class="text-xl font-bold text-accent">CompTIA PenTest+</h3>
                 </div>
-                
-                <!-- Formação Acadêmica -->
-                <div class="fade-in-section">
-                    <h3 data-i18n-key="education_title" class="text-2xl font-bold mb-8 text-accent text-center">FORMAÇÃO ACADÊMICA</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-1">
-                            <div class="flex items-start">
-                                <i class="fas fa-user-secret text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="edu1_title" class="text-xl font-bold">Ethical Hacker Full Course</h4>
-                                    <p data-i18n-key="edu1_desc" class="opacity-75">Cisco Networking Academy | março de 2025 - dezembro de 2025</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-2">
-                            <div class="flex items-start">
-                                <i class="fas fa-graduation-cap text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="edu2_title" class="text-xl font-bold">Segurança da Informação</h4>
-                                    <p data-i18n-key="edu2_desc" class="opacity-75">Senai São Paulo | janeiro de 2024 - dezembro de 2025</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-3">
-                            <div class="flex items-start">
-                                <i class="fab fa-python text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="edu3_title" class="text-xl font-bold">Curso de Python 3</h4>
-                                    <p data-i18n-key="edu3_desc" class="opacity-75">Udemy Alumni | março de 2024 - junho de 2025</p>.
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-4">
-                            <div class="flex items-start">
-                                <i class="fas fa-briefcase text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="edu4_title" class="text-xl font-bold">Curso Técnico em Administração</h4>
-                                    <p data-i18n-key="edu4_desc" class="opacity-75">Ε.Ε.B Padre Nobrega | fevereiro de 2024 - dezembro de 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-darkgray p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-5">
-                            <div class="flex items-start">
-                                <i class="fas fa-school text-accent text-2xl mr-4 mt-1"></i>
-                                <div>
-                                    <h4 data-i18n-key="edu5_title" class="text-xl font-bold">Ensino Médio</h4>
-                                    <p data-i18n-key="edu5_desc" class="opacity-75">Padre Nobrega | janeiro de 2022 - dezembro de 2025</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- CompTIA Security+ -->
+                <div class="bg-darkgray p-6 rounded-lg text-center transform transition-all hover:-translate-y-1 fade-in-section delay-2">
+                    <h3 data-i18n-key="cert_security_title" class="text-xl font-bold text-accent">CompTIA Security+</h3>
+                </div>
+                <!-- TryHackMe Badge -->
+                <div class="bg-darkgray p-6 rounded-lg text-center transform transition-all hover:-translate-y-1 fade-in-section delay-3">
+                    <a href="https://tryhackme.com/p/bpsarthur" target="_blank">
+                        <h3 class="text-xl font-bold text-accent">TryHackMe</h3>
+                        <p data-i18n-key="cert_thm_rank" class="text-lg">Top 2% Worldwide</p>
+                        <p data-i18n-key="cert_thm_br_rank" class="text-md">#94 Brazil</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 5.5: Formação Acadêmica -->
+    <section id="formacao" class="py-20 px-6 md:px-16 bg-darkgray">
+        <div class="container mx-auto">
+            <h2 data-i18n-key="education_title" class="text-3xl md:text-4xl font-bold mb-16 text-center" style="font-family: 'Roboto Mono', monospace;">FORMAÇÃO ACADÊMICA</h2>
+            <div class="space-y-6">
+                <div class="bg-dark p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-1">
+                    <h4 data-i18n-key="edu1_title" class="text-xl font-bold">Ethical Hacker Full Course</h4>
+                    <p data-i18n-key="edu1_desc" class="opacity-75">Cisco Networking Academy | março de 2025 - dezembro de 2025</p>
+                </div>
+                <div class="bg-dark p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-2">
+                    <h4 data-i18n-key="edu2_title" class="text-xl font-bold">Segurança da Informação</h4>
+                    <p data-i18n-key="edu2_desc" class="opacity-75">Senai São Paulo | janeiro de 2024 - dezembro de 2025</p>
+                </div>
+                <div class="bg-dark p-6 rounded-lg border-l-4 border-accent transform transition-all hover:-translate-y-1 fade-in-section delay-3">
+                    <h4 data-i18n-key="edu3_title" class="text-xl font-bold">Curso de Python 3</h4>
+                    <p data-i18n-key="edu3_desc" class="opacity-75">Udemy Alumni | março de 2024 - junho de 2025</p>
                 </div>
             </div>
         </div>
@@ -695,6 +650,17 @@
     <!-- Rodapé -->
     <footer class="py-10 bg-dark text-center">
         <div class="container mx-auto">
+            <div class="flex justify-center space-x-8 mb-4">
+                <a href="https://github.com/bpsarthur" target="_blank" class="icon-hover text-4xl hover:text-accent transition-colors duration-300 transform hover:scale-110" title="github.com/bpsarthur">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://tryhackme.com/p/bpsarthur" target="_blank" class="icon-hover text-4xl hover:text-accent transition-colors duration-300 transform hover:scale-110" title="tryhackme.com/p/bpsarthur">
+                    <i class="fas fa-terminal"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/arthur-berti-petersen-scholze-ab32a12b2/" target="_blank" class="icon-hover text-4xl hover:text-accent transition-colors duration-300 transform hover:scale-110" title="linkedin.com/in/arthur-berti-petersen-scholze-ab32a12b2/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
             <p data-i18n-key="footer_text">&copy; 2025 Arthur Berti Petersen Scholze. Todos os direitos reservados.</p>
         </div>
     </footer>
