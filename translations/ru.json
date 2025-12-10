@@ -105,5 +105,11 @@
   "contact_email_label": "Электронная почта",
   "contact_phone_label": "Телефон",
   "contact_quote": "\"Безопасность — это не продукт, а процесс.\"",
-  "footer_text": "&copy; 2025 Артур Берти Петерсен Шольце. Все права защищены."
+  "footer_text": "&copy; 2025 Артур Берти Петерсен Шольце. Все права защищены.",
+  "nav_about": "Обо мне",
+  "nav_skills": "Навыки",
+  "nav_projects": "Проекты",
+  "nav_cves": "CVE",
+  "nav_experience": "Опыт",
+  "nav_contact": "Контакт"
 }

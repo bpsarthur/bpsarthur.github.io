@@ -105,5 +105,11 @@
   "contact_email_label": "Email",
   "contact_phone_label": "Phone",
   "contact_quote": "\"Security is not a product, but a process.\"",
-  "footer_text": "&copy; 2025 Arthur Berti Petersen Scholze. All rights reserved."
+  "footer_text": "&copy; 2025 Arthur Berti Petersen Scholze. All rights reserved.",
+  "nav_about": "About",
+  "nav_skills": "Skills",
+  "nav_projects": "Projects",
+  "nav_cves": "CVEs",
+  "nav_experience": "Experience",
+  "nav_contact": "Contact"
 }
