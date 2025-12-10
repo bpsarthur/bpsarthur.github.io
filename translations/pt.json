@@ -40,6 +40,7 @@
   "cves_loading": "Carregando vulnerabilidades mais recentes...",
   "cves_none": "Nenhuma vulnerabilidade encontrada com os filtros selecionados.",
   "cves_error": "Falha ao carregar os dados de CVE. Tente novamente mais tarde.",
+  "cves_view_details": "Ver detalhes",
   "filter_severity": "Severidade",
   "filter_severity_all": "Todas",
   "filter_severity_critical": "Crítico",
