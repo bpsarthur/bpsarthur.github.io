@@ -94,12 +94,14 @@
         .navbar {
             backdrop-filter: blur(10px);
             background: rgba(13, 17, 23, 0.85);
-            border-bottom: 1px solid rgba(0, 255, 65, 0.1);
+            border: 1px solid rgba(0, 255, 65, 0.1);
+            border-radius: 1rem;
             transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
         
         .navbar.scrolled {
-            box-shadow: 0 4px 30px rgba(0, 255, 65, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 255, 65, 0.15);
         }
         
         .nav-link {
@@ -404,7 +406,7 @@
     </div>
     
     <!-- Fixed Navigation Bar -->
-    <nav class="navbar fixed top-0 left-0 right-0 z-50 hidden md:block" id="navbar">
+    <nav class="navbar fixed top-4 left-1/2 transform -translate-x-1/2 z-50 hidden md:block rounded-2xl border border-accent/20" id="navbar" style="width: 90%; max-width: 1200px;">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <div class="text-xl font-bold font-mono">
